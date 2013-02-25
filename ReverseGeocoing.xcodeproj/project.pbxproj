@@ -17,7 +17,9 @@
 		33E8B4E016DADE2900FB40F7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33E8B4DF16DADE2900FB40F7 /* Default@2x.png */; };
 		33E8B4E216DADE2900FB40F7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33E8B4E116DADE2900FB40F7 /* Default-568h@2x.png */; };
 		33E8B4E516DADE2900FB40F7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33E8B4E316DADE2900FB40F7 /* MainStoryboard.storyboard */; };
-		33E8B4E816DADE2900FB40F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E8B4E716DADE2900FB40F7 /* ViewController.m */; };
+		33E8B4F316DADF1A00FB40F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E8B4F216DADF1A00FB40F7 /* ViewController.m */; };
+		33E8B4F516DADF6D00FB40F7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33E8B4F416DADF6D00FB40F7 /* MapKit.framework */; };
+		33E8B4F716DAE14D00FB40F7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33E8B4F616DAE14D00FB40F7 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +37,10 @@
 		33E8B4DF16DADE2900FB40F7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		33E8B4E116DADE2900FB40F7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		33E8B4E416DADE2900FB40F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		33E8B4E616DADE2900FB40F7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		33E8B4E716DADE2900FB40F7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		33E8B4F116DADF1A00FB40F7 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
+		33E8B4F216DADF1A00FB40F7 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
+		33E8B4F416DADF6D00FB40F7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		33E8B4F616DAE14D00FB40F7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33E8B4F716DAE14D00FB40F7 /* CoreLocation.framework in Frameworks */,
+				33E8B4F516DADF6D00FB40F7 /* MapKit.framework in Frameworks */,
 				33E8B4CC16DADE2900FB40F7 /* UIKit.framework in Frameworks */,
 				33E8B4CE16DADE2900FB40F7 /* Foundation.framework in Frameworks */,
 				33E8B4D016DADE2900FB40F7 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +79,8 @@
 		33E8B4CA16DADE2900FB40F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				33E8B4F616DAE14D00FB40F7 /* CoreLocation.framework */,
+				33E8B4F416DADF6D00FB40F7 /* MapKit.framework */,
 				33E8B4CB16DADE2900FB40F7 /* UIKit.framework */,
 				33E8B4CD16DADE2900FB40F7 /* Foundation.framework */,
 				33E8B4CF16DADE2900FB40F7 /* CoreGraphics.framework */,
@@ -83,11 +91,9 @@
 		33E8B4D116DADE2900FB40F7 /* ReverseGeocoing */ = {
 			isa = PBXGroup;
 			children = (
-				33E8B4DA16DADE2900FB40F7 /* AppDelegate.h */,
-				33E8B4DB16DADE2900FB40F7 /* AppDelegate.m */,
+				33E8B4F116DADF1A00FB40F7 /* ViewController.h */,
+				33E8B4F216DADF1A00FB40F7 /* ViewController.m */,
 				33E8B4E316DADE2900FB40F7 /* MainStoryboard.storyboard */,
-				33E8B4E616DADE2900FB40F7 /* ViewController.h */,
-				33E8B4E716DADE2900FB40F7 /* ViewController.m */,
 				33E8B4D216DADE2900FB40F7 /* Supporting Files */,
 			);
 			path = ReverseGeocoing;
@@ -96,6 +102,8 @@
 		33E8B4D216DADE2900FB40F7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				33E8B4DA16DADE2900FB40F7 /* AppDelegate.h */,
+				33E8B4DB16DADE2900FB40F7 /* AppDelegate.m */,
 				33E8B4D316DADE2900FB40F7 /* ReverseGeocoing-Info.plist */,
 				33E8B4D416DADE2900FB40F7 /* InfoPlist.strings */,
 				33E8B4D716DADE2900FB40F7 /* main.m */,
@@ -175,7 +183,7 @@
 			files = (
 				33E8B4D816DADE2900FB40F7 /* main.m in Sources */,
 				33E8B4DC16DADE2900FB40F7 /* AppDelegate.m in Sources */,
-				33E8B4E816DADE2900FB40F7 /* ViewController.m in Sources */,
+				33E8B4F316DADF1A00FB40F7 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
